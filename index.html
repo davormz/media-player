@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My media player</title>
+    <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Media player</h1>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="container">
+            <video class="video-player">
+                <source src="./assets/BigBuckBunny.mp4" />
+            </video>
+            <button>Play/Pause</button>
+        </section>
+    </main>
+    <script>
+        const video = document.querySelector("video");
+        const btn = document.querySelector("button");
+
+        function MediaPlayer(config) {
+            this.media = config.el
+        }
+        
+        MediaPlayer.prototype.play = function(){
+            this.media.play();
+        };
+
+        const player = new MediaPlayer({el:video});
+        btn.onclick = () => player.play();
+
+    </script>
+</body>
+</html>
