@@ -6,11 +6,11 @@
   "scripts": {
     "start": "live-server",
     "test": "echo \"Error: no test specified\" && exit 1"
-
   },
-  "author": "David Ramirez Ledesma - davo.rmz@gmail.com",
+  "author": "David Ramirez Ledesma <davo.rmz@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.1",
+    "parcel-bundler": "^1.12.5"
   }
 }
