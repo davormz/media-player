@@ -7,14 +7,14 @@ self.addEventListener('install', event => {
 async function precache(){
     const cache = await caches.open(CACHE_VERSION);
     return cache.addAll([
-        '/',
-        '/index.html',
-        '/src/index.js',
-        '/src/js/MediaPlayer.js',
-        '/src/js/pluggins/AutoPlay.js',
-        '/src/js/pluggins/AutoPause.js',
-        '/src/styles/main.css',
-        '/assets/BigBuckBunny.mp4'
+        // '/',
+        // '/index.html',
+        // '/src/index.js',
+        // '/src/js/MediaPlayer.js',
+        // '/src/js/pluggins/AutoPlay.js',
+        // '/src/js/pluggins/AutoPause.js',
+        // '/src/styles/main.css',
+        // '/assets/BigBuckBunny.mp4'
     ]);
 }
 
