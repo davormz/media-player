@@ -1,6 +1,7 @@
 import MediaPlayer from './js/MediaPlayer';
 import AutoPlay from './js/pluggins/AutoPlay';
 import AutoPause from './js/pluggins/AutoPause';
+import Ads from './js/pluggins/ads';
 
 const video = document.querySelector("video");
 const btnPlay: HTMLElement = document.querySelector(".video-player__play");
@@ -10,7 +11,8 @@ const player = new MediaPlayer({
     el:video,
     pluggins: [
         new AutoPlay(),
-        new AutoPause()
+        new AutoPause(),
+        new Ads()
     ]
 });
 btnPlay.onclick = () => player.togglePlay();
