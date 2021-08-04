@@ -3,7 +3,6 @@ import AutoPlay from './js/pluggins/AutoPlay';
 import AutoPause from './js/pluggins/AutoPause';
 import Ads from './js/pluggins/ads';
 
-const mediaContainer: HTMLElement = document.querySelector(".media-container");
 const video = document.querySelector("video");
 const btnPlay: HTMLElement = document.querySelector(".video-player__play");
 const btnMute: HTMLElement = document.querySelector(".video-player__mute");
