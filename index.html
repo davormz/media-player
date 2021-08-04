@@ -7,6 +7,7 @@
     <title>My media player</title>
     <link rel="stylesheet" href="./src/styles/main.css">
     <link rel="icon" type="image/png" href="#">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -14,14 +15,14 @@
             <h1>Media player</h1>
         </nav>
     </header>
-    <main class="container">
-        <section class="container">
+    <main >
+        <section class="media-container">
             <video class="video-player">
                 <source src="./assets/BigBuckBunny.mp4" />
             </video>
             <div class="video-player__controls">
-                <button class="video-player__play">Play/Pause</button>
-                <button class="video-player__mute">Mute/Unmute</button>
+                <span role="button" class="button video-player__play material-icons md-48">play_circle</span>
+                <span class="button video-player__mute material-icons md-48">volume_off</span>
             </div>
         </section>
         <section class="comments">
