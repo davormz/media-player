@@ -1,6 +1,8 @@
 import MediaPlayer from './../../MediaPlayer';
 import Ads, { Ad } from './Ads';
 
+const adTime:number = 10000;
+
 class AdsPlugging{
     private player:MediaPlayer;
     private media:HTMLMediaElement;
@@ -48,7 +50,7 @@ class AdsPlugging{
         setTimeout(() => {
             this.currentAd = null;
             this.adsContainer.innerHTML = '';
-        }, 10000);
+        }, adTime);
     }
 }
 

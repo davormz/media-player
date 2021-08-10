@@ -11,9 +11,8 @@ const player = new MediaPlayer({
     el:video,
     pluggins: [
         new AutoPlay(),
-        new AutoPause()
-        // ,
-        // new Ads()
+        new AutoPause() ,
+        new Ads()
     ],
     playButton: btnPlay,
     muteButton: btnMute
