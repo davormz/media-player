@@ -14,7 +14,9 @@ const player = new MediaPlayer({
         new AutoPause()
         // ,
         // new Ads()
-    ]
+    ],
+    playButton: btnPlay,
+    muteButton: btnMute
 });
 video.onclick = () => player.togglePlay();
 btnPlay.onclick = () => player.togglePlay();

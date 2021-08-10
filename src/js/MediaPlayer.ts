@@ -1,11 +1,21 @@
+const play_icon: string = 'play_circle';
+const pause_icon: string = 'pause';
+const mute_icon: string = 'volume_off';
+const unmute_icon: string = 'volume_up';
+
 class MediaPlayer {
     media: HTMLMediaElement;
     pluggins: Array<any>;
     containier: HTMLElement;
+    playButton: HTMLElement;
+    muteButton: HTMLElement;
+
     
     constructor(config) {
         this.media = config.el;
         this.pluggins = config.pluggins || [];
+        this.playButton = config.playButton;
+        this.muteButton = config.muteButton;
         this.initPlayer();
         this.initPluggins();
     }
@@ -25,10 +35,12 @@ class MediaPlayer {
     
     play() {
         this.media.play();
+        this.playButton.innerText = play_icon;
     }
     
     pause() {
         this.media.pause();
+        this.playButton.innerText = pause_icon;
     }
     
     togglePlay() {
@@ -42,10 +54,12 @@ class MediaPlayer {
     
     mute() {
         this.media.muted = true;
+        this.muteButton.innerText = mute_icon;
     }
     
     unmute() {
         this.media.muted = false;
+        this.muteButton.innerText = unmute_icon;
     }
     
     toggleMute() {
